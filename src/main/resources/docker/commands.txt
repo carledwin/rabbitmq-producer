@@ -1,0 +1,8 @@
+
+//Acessar o bash do container do rabbitMQ
+docker exec -it rabbitmq-container bash
+
+//Habilitar o plugin do rabbitmq que permite mover as mensagens da deadLetter para outra fila
+rabbitmq-plugins enable rabbitmq_shovel rabbitmq_shovel_management
+
+Acessar a opção Move messages >> Destination queue: rk.producer.rmq e pressionar o botão "Move messages"

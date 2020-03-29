@@ -1,0 +1,1 @@
+curl -X POST -d '{"message":"Primeira mensagem para o RabbitMQ"}' localhost:8081/send -H "Content-Type: application/json"
